@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8807825C6315C3909BF681FA /* Pods_PetPalsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3695E20573FC8BEB11EF782 /* Pods_PetPalsProject.framework */; };
 		A5A4BD8C1F560D62004EB2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BD8B1F560D62004EB2A3 /* AppDelegate.swift */; };
 		A5A4BD8E1F560D62004EB2A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BD8D1F560D62004EB2A3 /* ViewController.swift */; };
 		A5A4BD911F560D62004EB2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BD8F1F560D62004EB2A3 /* Main.storyboard */; };
 		A5A4BD941F560D62004EB2A3 /* PetPalsProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BD921F560D62004EB2A3 /* PetPalsProject.xcdatamodeld */; };
 		A5A4BD961F560D62004EB2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BD951F560D62004EB2A3 /* Assets.xcassets */; };
 		A5A4BD991F560D62004EB2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BD971F560D62004EB2A3 /* LaunchScreen.storyboard */; };
+		A5A4BDA11F560F06004EB2A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BDA01F560F06004EB2A3 /* GoogleService-Info.plist */; };
+		A5A4BDA31F5618FC004EB2A3 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDA21F5618FC004EB2A3 /* mainViewController.swift */; };
+		A5A4BDA51F561DE7004EB2A3 /* contactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDA41F561DE7004EB2A3 /* contactViewController.swift */; };
+		A5A4BDA81F562405004EB2A3 /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDA71F562405004EB2A3 /* aboutUsViewController.swift */; };
+		A5A4BDAA1F562530004EB2A3 /* privacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDA91F562530004EB2A3 /* privacyViewController.swift */; };
+		A5A4BDAC1F562633004EB2A3 /* galleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDAB1F562633004EB2A3 /* galleryViewController.swift */; };
+		A5A4BDAE1F5636B6004EB2A3 /* usersAccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDAD1F5636B6004EB2A3 /* usersAccViewController.swift */; };
+		A5A4BDB01F563705004EB2A3 /* createuserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */; };
+		A5A4BDB21F565CC5004EB2A3 /* petImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */; };
+		A5A4BDB41F565F97004EB2A3 /* petReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A6C0A39ACC8A469BBA3AFF1 /* Pods-PetPalsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPalsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A4BD881F560D62004EB2A3 /* PetPalsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetPalsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A4BD8B1F560D62004EB2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A4BD8D1F560D62004EB2A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +36,18 @@
 		A5A4BD951F560D62004EB2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A4BD981F560D62004EB2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A4BD9A1F560D62004EB2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A4BDA01F560F06004EB2A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5A4BDA21F5618FC004EB2A3 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		A5A4BDA41F561DE7004EB2A3 /* contactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactViewController.swift; sourceTree = "<group>"; };
+		A5A4BDA71F562405004EB2A3 /* aboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutUsViewController.swift; sourceTree = "<group>"; };
+		A5A4BDA91F562530004EB2A3 /* privacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = privacyViewController.swift; sourceTree = "<group>"; };
+		A5A4BDAB1F562633004EB2A3 /* galleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = galleryViewController.swift; sourceTree = "<group>"; };
+		A5A4BDAD1F5636B6004EB2A3 /* usersAccViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = usersAccViewController.swift; sourceTree = "<group>"; };
+		A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createuserViewController.swift; sourceTree = "<group>"; };
+		A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petImageViewController.swift; sourceTree = "<group>"; };
+		A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petReviewViewController.swift; sourceTree = "<group>"; };
+		C3695E20573FC8BEB11EF782 /* Pods_PetPalsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPalsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95D2AFA601E81CE7FAFA2C6 /* Pods-PetPalsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPalsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8807825C6315C3909BF681FA /* Pods_PetPalsProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE07DCBC520EAFB5AA5A3A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C0A39ACC8A469BBA3AFF1 /* Pods-PetPalsProject.debug.xcconfig */,
+				D95D2AFA601E81CE7FAFA2C6 /* Pods-PetPalsProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5A4BD7F1F560D62004EB2A3 = {
 			isa = PBXGroup;
 			children = (
 				A5A4BD8A1F560D62004EB2A3 /* PetPalsProject */,
 				A5A4BD891F560D62004EB2A3 /* Products */,
+				5BE07DCBC520EAFB5AA5A3A4 /* Pods */,
+				FFCA95481AFA3EC9C303F6CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,41 @@
 		A5A4BD8A1F560D62004EB2A3 /* PetPalsProject */ = {
 			isa = PBXGroup;
 			children = (
+				A5A4BDA61F561DF7004EB2A3 /* ViewControllers */,
 				A5A4BD8B1F560D62004EB2A3 /* AppDelegate.swift */,
 				A5A4BD8D1F560D62004EB2A3 /* ViewController.swift */,
 				A5A4BD8F1F560D62004EB2A3 /* Main.storyboard */,
 				A5A4BD951F560D62004EB2A3 /* Assets.xcassets */,
 				A5A4BD971F560D62004EB2A3 /* LaunchScreen.storyboard */,
 				A5A4BD9A1F560D62004EB2A3 /* Info.plist */,
+				A5A4BDA01F560F06004EB2A3 /* GoogleService-Info.plist */,
 				A5A4BD921F560D62004EB2A3 /* PetPalsProject.xcdatamodeld */,
 			);
 			path = PetPalsProject;
+			sourceTree = "<group>";
+		};
+		A5A4BDA61F561DF7004EB2A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5A4BDA21F5618FC004EB2A3 /* mainViewController.swift */,
+				A5A4BDA41F561DE7004EB2A3 /* contactViewController.swift */,
+				A5A4BDA71F562405004EB2A3 /* aboutUsViewController.swift */,
+				A5A4BDA91F562530004EB2A3 /* privacyViewController.swift */,
+				A5A4BDAB1F562633004EB2A3 /* galleryViewController.swift */,
+				A5A4BDAD1F5636B6004EB2A3 /* usersAccViewController.swift */,
+				A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */,
+				A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */,
+				A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFCA95481AFA3EC9C303F6CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3695E20573FC8BEB11EF782 /* Pods_PetPalsProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5A4BD9D1F560D62004EB2A3 /* Build configuration list for PBXNativeTarget "PetPalsProject" */;
 			buildPhases = (
+				F060BE73E38D1E153ABC5604 /* [CP] Check Pods Manifest.lock */,
 				A5A4BD841F560D62004EB2A3 /* Sources */,
 				A5A4BD851F560D62004EB2A3 /* Frameworks */,
 				A5A4BD861F560D62004EB2A3 /* Resources */,
+				5F84FDEE8A33B8A581A29C00 /* [CP] Embed Pods Frameworks */,
+				5E4F341DD8CA0498F4A02738 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,19 +194,89 @@
 				A5A4BD991F560D62004EB2A3 /* LaunchScreen.storyboard in Resources */,
 				A5A4BD961F560D62004EB2A3 /* Assets.xcassets in Resources */,
 				A5A4BD911F560D62004EB2A3 /* Main.storyboard in Resources */,
+				A5A4BDA11F560F06004EB2A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E4F341DD8CA0498F4A02738 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F84FDEE8A33B8A581A29C00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F060BE73E38D1E153ABC5604 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetPalsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5A4BD841F560D62004EB2A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A4BDA81F562405004EB2A3 /* aboutUsViewController.swift in Sources */,
+				A5A4BDB01F563705004EB2A3 /* createuserViewController.swift in Sources */,
+				A5A4BDB41F565F97004EB2A3 /* petReviewViewController.swift in Sources */,
+				A5A4BDAA1F562530004EB2A3 /* privacyViewController.swift in Sources */,
+				A5A4BDAE1F5636B6004EB2A3 /* usersAccViewController.swift in Sources */,
+				A5A4BDB21F565CC5004EB2A3 /* petImageViewController.swift in Sources */,
+				A5A4BDA51F561DE7004EB2A3 /* contactViewController.swift in Sources */,
 				A5A4BD8E1F560D62004EB2A3 /* ViewController.swift in Sources */,
 				A5A4BD8C1F560D62004EB2A3 /* AppDelegate.swift in Sources */,
+				A5A4BDAC1F562633004EB2A3 /* galleryViewController.swift in Sources */,
 				A5A4BD941F560D62004EB2A3 /* PetPalsProject.xcdatamodeld in Sources */,
+				A5A4BDA31F5618FC004EB2A3 /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +399,7 @@
 		};
 		A5A4BD9E1F560D62004EB2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6C0A39ACC8A469BBA3AFF1 /* Pods-PetPalsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PetPalsProject/Info.plist;
@@ -276,6 +412,7 @@
 		};
 		A5A4BD9F1F560D62004EB2A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95D2AFA601E81CE7FAFA2C6 /* Pods-PetPalsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PetPalsProject/Info.plist;
@@ -305,6 +442,7 @@
 				A5A4BD9F1F560D62004EB2A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
