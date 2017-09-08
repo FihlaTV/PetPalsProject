@@ -24,6 +24,10 @@
 		A5A4BDB01F563705004EB2A3 /* createuserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */; };
 		A5A4BDB21F565CC5004EB2A3 /* petImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */; };
 		A5A4BDB41F565F97004EB2A3 /* petReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */; };
+		A5A4BDC41F60DF84004EB2A3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDC31F60DF84004EB2A3 /* SWRevealViewController.m */; };
+		A5A4BDC61F617FDF004EB2A3 /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BDC51F617FDF004EB2A3 /* homePageViewController.swift */; };
+		A5E490741F61EACE0037E2A2 /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E490731F61EACE0037E2A2 /* CustomersViewController.swift */; };
+		A5E490761F61FA1D0037E2A2 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E490751F61FA1D0037E2A2 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,12 @@
 		A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createuserViewController.swift; sourceTree = "<group>"; };
 		A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petImageViewController.swift; sourceTree = "<group>"; };
 		A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petReviewViewController.swift; sourceTree = "<group>"; };
+		A5A4BDC11F60DF83004EB2A3 /* PetPalsProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetPalsProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5A4BDC21F60DF84004EB2A3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A5A4BDC31F60DF84004EB2A3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A5A4BDC51F617FDF004EB2A3 /* homePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
+		A5E490731F61EACE0037E2A2 /* CustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
+		A5E490751F61FA1D0037E2A2 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C3695E20573FC8BEB11EF782 /* Pods_PetPalsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetPalsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95D2AFA601E81CE7FAFA2C6 /* Pods-PetPalsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetPalsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetPalsProject/Pods-PetPalsProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,15 +102,20 @@
 		A5A4BD8A1F560D62004EB2A3 /* PetPalsProject */ = {
 			isa = PBXGroup;
 			children = (
+				A5A4BDCC1F619F18004EB2A3 /* SwiftFile */,
+				A5A4BDC91F6188F1004EB2A3 /* TableViewControllers */,
 				A5A4BDA61F561DF7004EB2A3 /* ViewControllers */,
 				A5A4BD8B1F560D62004EB2A3 /* AppDelegate.swift */,
 				A5A4BD8D1F560D62004EB2A3 /* ViewController.swift */,
 				A5A4BD8F1F560D62004EB2A3 /* Main.storyboard */,
 				A5A4BD951F560D62004EB2A3 /* Assets.xcassets */,
 				A5A4BD971F560D62004EB2A3 /* LaunchScreen.storyboard */,
+				A5A4BDC21F60DF84004EB2A3 /* SWRevealViewController.h */,
+				A5A4BDC31F60DF84004EB2A3 /* SWRevealViewController.m */,
 				A5A4BD9A1F560D62004EB2A3 /* Info.plist */,
 				A5A4BDA01F560F06004EB2A3 /* GoogleService-Info.plist */,
 				A5A4BD921F560D62004EB2A3 /* PetPalsProject.xcdatamodeld */,
+				A5A4BDC11F60DF83004EB2A3 /* PetPalsProject-Bridging-Header.h */,
 			);
 			path = PetPalsProject;
 			sourceTree = "<group>";
@@ -117,8 +132,25 @@
 				A5A4BDAF1F563705004EB2A3 /* createuserViewController.swift */,
 				A5A4BDB11F565CC5004EB2A3 /* petImageViewController.swift */,
 				A5A4BDB31F565F97004EB2A3 /* petReviewViewController.swift */,
+				A5A4BDC51F617FDF004EB2A3 /* homePageViewController.swift */,
+				A5E490731F61EACE0037E2A2 /* CustomersViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5A4BDC91F6188F1004EB2A3 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		A5A4BDCC1F619F18004EB2A3 /* SwiftFile */ = {
+			isa = PBXGroup;
+			children = (
+				A5E490751F61FA1D0037E2A2 /* Users.swift */,
+			);
+			name = SwiftFile;
 			sourceTree = "<group>";
 		};
 		FFCA95481AFA3EC9C303F6CF /* Frameworks */ = {
@@ -164,6 +196,7 @@
 				TargetAttributes = {
 					A5A4BD871F560D62004EB2A3 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,15 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A4BDC61F617FDF004EB2A3 /* homePageViewController.swift in Sources */,
 				A5A4BDA81F562405004EB2A3 /* aboutUsViewController.swift in Sources */,
 				A5A4BDB01F563705004EB2A3 /* createuserViewController.swift in Sources */,
+				A5A4BDC41F60DF84004EB2A3 /* SWRevealViewController.m in Sources */,
 				A5A4BDB41F565F97004EB2A3 /* petReviewViewController.swift in Sources */,
 				A5A4BDAA1F562530004EB2A3 /* privacyViewController.swift in Sources */,
 				A5A4BDAE1F5636B6004EB2A3 /* usersAccViewController.swift in Sources */,
 				A5A4BDB21F565CC5004EB2A3 /* petImageViewController.swift in Sources */,
+				A5E490761F61FA1D0037E2A2 /* Users.swift in Sources */,
 				A5A4BDA51F561DE7004EB2A3 /* contactViewController.swift in Sources */,
 				A5A4BD8E1F560D62004EB2A3 /* ViewController.swift in Sources */,
 				A5A4BD8C1F560D62004EB2A3 /* AppDelegate.swift in Sources */,
+				A5E490741F61EACE0037E2A2 /* CustomersViewController.swift in Sources */,
 				A5A4BDAC1F562633004EB2A3 /* galleryViewController.swift in Sources */,
 				A5A4BD941F560D62004EB2A3 /* PetPalsProject.xcdatamodeld in Sources */,
 				A5A4BDA31F5618FC004EB2A3 /* mainViewController.swift in Sources */,
@@ -402,10 +439,13 @@
 			baseConfigurationReference = 4A6C0A39ACC8A469BBA3AFF1 /* Pods-PetPalsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PetPalsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestpetpals.PetPalsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetPalsProject/PetPalsProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -415,10 +455,12 @@
 			baseConfigurationReference = D95D2AFA601E81CE7FAFA2C6 /* Pods-PetPalsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PetPalsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bestpetpals.PetPalsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetPalsProject/PetPalsProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

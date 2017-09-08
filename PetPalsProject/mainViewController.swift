@@ -23,11 +23,12 @@ class mainViewController: UIViewController {
         guard emailTextField.text != "", passwordTextField.text != "" else {return}
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
             if error != nil {
-                print("we tried to sign in")
+               
                 
             }else{
                 print("Sign in was Successfull")
                 self.performSegue(withIdentifier: "signInSegue", sender: nil)
+                
             }
             
             

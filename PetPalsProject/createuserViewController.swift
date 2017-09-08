@@ -77,7 +77,7 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
                                                                 "urlToImage": url.absoluteString]
                                 self.ref.child("users").child(user.uid).setValue(userInfo)
                                 
-                                let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "usersAccViewController")
+                                let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "CustomersViewController")
                                 self.present(vc, animated: true, completion: nil)
                             }
                         })
