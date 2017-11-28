@@ -43,7 +43,7 @@ class galleryViewController: UIViewController {
     func imagaeGal(){
         if imageInt == 1 {
             backOutlet.isEnabled = false
-            imageView.image = UIImage(named: "download7")
+            imageView.image = UIImage(named: "images2")
         }
         
         if imageInt == 2 {

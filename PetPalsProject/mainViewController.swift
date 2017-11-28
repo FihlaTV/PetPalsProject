@@ -8,11 +8,15 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class mainViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    var userStorage: StorageReference!
+    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,18 +27,17 @@ class mainViewController: UIViewController {
         guard emailTextField.text != "", passwordTextField.text != "" else {return}
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
             if error != nil {
-               
+                print("Hey we have an error")
                 
-            }else{
-                print("Sign in was Successfull")
-                self.performSegue(withIdentifier: "signInSegue", sender: nil)
-                
+                          }else {
+                print("password does not match")
             }
             
-            
-            
         })
+    }
+}
 
-    }
+
+
+
     
-    }

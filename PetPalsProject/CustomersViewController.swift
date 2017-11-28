@@ -10,37 +10,46 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class CustomersViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
+class CustomersViewController: UIViewController{
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var usernameText: UILabel!
+    
+    @IBOutlet weak var profileImageText: UIImageView!
+    
+    @IBOutlet weak var displayNameText: UILabel!
+    var databaseRef: DatabaseReference!
   
-    var users : [Users] = []
-    var ref: DatabaseReference?
     override func viewDidLoad() {
         super.viewDidLoad()
+        databaseRef = Database.database().reference()
+        
+        if let userID = Auth.auth().currentUser?.uid {
+            databaseRef.child("users").child(userID).observeSingleEvent(of:.childAdded, with: {(snapshot) in
+                let dictionary = snapshot.value as? NSDictionary
+                let username = dictionary?["full name"] as? String ?? "full name"
+                if let profileImageURL = dictionary?["urlToImage"] as? String{
+                    let url = URL(string: profileImageURL)
+                    
+                    URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+                        if error != nil{
+                            print(error!)
+                            return
+                        }
+                        DispatchQueue.main.async {
+                            self.profileImageText.image = UIImage(data: data!)
+                        }
+                    }) .resume()
+                }
+                self.usernameText.text = username
+                self.displayNameText.text = username
+            }) { (error) in
+                print(error.localizedDescription)
+                return
+            }
+        }
+        
 
-        // Do any additional setup after loading the view.
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        
-        
-        
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = users[indexPath.row].email
-        
-        return cell
-    }
-   
-    @IBAction func logOutTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func profileTapped(_ sender: Any) {
-    }
-}
+   }

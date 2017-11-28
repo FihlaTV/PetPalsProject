@@ -55,8 +55,9 @@ class petImageViewController: UIViewController, UIImagePickerControllerDelegate,
                 
             }else{
                 print(metadata?.downloadURL() ?? 0.1)
-                self.performSegue(withIdentifier: "petreviewSegue", sender: metadata!.downloadURL()!.absoluteString)
+                self.performSegue(withIdentifier: "ProfileViewController", sender: metadata!.downloadURL()!.absoluteString)
             }
+            
             
         }
         

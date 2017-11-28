@@ -21,6 +21,15 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var StreetField: UITextField!
+    
+    @IBOutlet weak var cityField: UITextField!
+    
+    @IBOutlet weak var stateField: UITextField!
+    
+    @IBOutlet weak var zipField: UITextField!
+    
+    @IBOutlet weak var phoneNumField: UITextField!
     let picker = UIImagePickerController()
     var userStorage: StorageReference!
     var ref: DatabaseReference!
@@ -31,6 +40,7 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
         let storage = Storage.storage().reference(forURL: "gs://bestpetpal-c8d95.appspot.com")
         ref = Database.database().reference()
         userStorage = storage.child("users")
+        imageView.image = #imageLiteral(resourceName: "staticBlackImage")
     }
 
     @IBAction func selectPicTapped(_ sender: Any) {
@@ -49,7 +59,7 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
     
 
     @IBAction func nextTapped(_ sender: Any) {
-        guard nameTextField.text != "", emailField.text != "", passWordField.text != "" else {
+       guard nameTextField.text != "", emailField.text != "", passWordField.text != "" else {
             return}
         
         if passWordField.text == confirmPwdField.text {
@@ -61,8 +71,8 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
                     let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                     changeRequest?.commitChanges(completion: nil)
                     let imageRef = self.userStorage.child("\(user.uid).jpg")
-                    let data = UIImageJPEGRepresentation(self.imageView.image!, 0.5)
-                    let uploadTask = imageRef.putData(data!, metadata: nil, completion: { (metadata, err) in
+                     let data = UIImageJPEGRepresentation(self.imageView.image!, 0.5)
+                    imageRef.putData((data)!, metadata: nil, completion: { (metadata, err) in
                         if err != nil {
                             print(err!.localizedDescription)
                         }
@@ -73,17 +83,22 @@ class createuserViewController: UIViewController, UIImagePickerControllerDelegat
                             }
                             
                             if let url = url {
-                                let userInfo: [String : Any] = ["uid" : user.uid, "full name": self.nameTextField.text!,
+                                let userInfo: [String : Any] = ["uid" : user.uid, "email" : self.emailField.text!, "fullname": self.nameTextField.text!,
+                                     "street": self.StreetField.text!,
+                                     "city": self.cityField.text!,
+                                     "state": self.stateField.text!,
+                                     "zipCode": self.zipField.text!,
+                                     "phoneNumber": self.phoneNumField.text!,
                                                                 "urlToImage": url.absoluteString]
                                 self.ref.child("users").child(user.uid).setValue(userInfo)
                                 
-                                let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "CustomersViewController")
-                                self.present(vc, animated: true, completion: nil)
+                               
+                               // self.present(vc, animated: true, completion: nil)
                             }
                         })
                     })
                     
-                    uploadTask.resume()
+                    //uploadTask.resume()
                     
                 }
             })
